@@ -108,3 +108,5 @@ Desktop.ini
 
 # ---- spaCy / NLTK model caches (if downloaded into the repo) ----
 *.spacy
+
+/data/
