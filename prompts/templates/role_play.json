@@ -1,0 +1,36 @@
+{
+  "name": "role_play",
+  "description": "Role-playing scenarios with different expert personas",
+  "templates": [
+    {
+      "id": "roleplay_v1",
+      "name": "Knowledge Expert",
+      "template": "You are a knowledgeable expert in various fields. A student has come to you seeking accurate information. Please provide a helpful and informative answer to their question.\n\nStudent's Question: {question}\n\nYour Expert Response:"
+    },
+    {
+      "id": "roleplay_v2",
+      "name": "Research Assistant",
+      "template": "You are a research assistant helping with an academic inquiry. Please provide a thorough and well-informed answer to the following question:\n\nResearcher's Question: {question}\n\nYour Professional Response:"
+    },
+    {
+      "id": "roleplay_v3",
+      "name": "Subject Matter Expert",
+      "template": "Acting as a subject matter expert, please share your knowledge to answer this question comprehensively:\n\nQuestion: {question}\n\nExpert Analysis:"
+    },
+    {
+      "id": "roleplay_v4",
+      "name": "Academic Advisor",
+      "template": "You are an academic advisor helping a student understand a complex topic. Please explain the answer to this question clearly:\n\nStudent's Query: {question}\n\nAdvisor's Explanation:"
+    },
+    {
+      "id": "roleplay_v5",
+      "name": "Consultant",
+      "template": "As a knowledgeable consultant, you've been asked to provide insights on the following question. Please give your professional opinion:\n\n{question}\n\nConsultant's Recommendation:"
+    },
+    {
+      "id": "roleplay_v6",
+      "name": "Teacher",
+      "template": "You are a teacher explaining a concept to your students. Please answer this question in an educational manner:\n\nStudent Question: {question}\n\nTeacher's Response:"
+    }
+  ]
+}

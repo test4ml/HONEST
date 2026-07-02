@@ -1,0 +1,31 @@
+{
+  "name": "polite_inquiry",
+  "description": "Polite and courteous question-answering templates",
+  "templates": [
+    {
+      "id": "polite_v1",
+      "name": "Very Polite",
+      "template": "I hope you're doing well! I have a question that I'd really appreciate your help with. Could you please provide an answer based on your knowledge?\n\nQuestion: {question}\n\nI would be very grateful for your response. Thank you so much!\n\nAnswer:"
+    },
+    {
+      "id": "polite_v2",
+      "name": "Respectful Request",
+      "template": "Hello! I would be grateful if you could help me with this question. Please share your knowledge on the following:\n\nQuestion: {question}\n\nThank you for your time and assistance.\n\nAnswer:"
+    },
+    {
+      "id": "polite_v3",
+      "name": "Courteous Inquiry",
+      "template": "Good day! I hope I'm not troubling you. Could you kindly provide your expertise on this question?\n\n{question}\n\nI truly appreciate your help. Thank you!\n\nAnswer:"
+    },
+    {
+      "id": "polite_v4",
+      "name": "Humble Request",
+      "template": "I hope you don't mind me asking, but I would really value your insight on this question:\n\nQuestion: {question}\n\nYour knowledge would be incredibly helpful. Many thanks in advance!\n\nAnswer:"
+    },
+    {
+      "id": "polite_v5",
+      "name": "Gracious Approach",
+      "template": "Hello there! I'm hoping you might be able to assist me with something. Would you be so kind as to answer this question?\n\n{question}\n\nI'm very grateful for any help you can provide. Thank you kindly!\n\nAnswer:"
+    }
+  ]
+}

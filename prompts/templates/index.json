@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "description": "QA Testing Prompt Templates Configuration",
+  "last_updated": "2025-01-01",
+  "template_types": [
+    {
+      "type": "baseline",
+      "file": "baseline.json",
+      "description": "Basic straightforward question-answering templates"
+    },
+    {
+      "type": "polite_inquiry",
+      "file": "polite_inquiry.json",
+      "description": "Polite and courteous question-answering templates"
+    },
+    {
+      "type": "clarify_usage",
+      "file": "clarify_usage.json",
+      "description": "Templates that clarify the purpose and context of use"
+    },
+    {
+      "type": "role_play",
+      "file": "role_play.json",
+      "description": "Role-playing scenarios with different expert personas"
+    }
+  ],
+  "selection_strategy": {
+    "default": "random",
+    "options": ["random", "sequential", "specific"]
+  }
+}

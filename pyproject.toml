@@ -1,0 +1,5 @@
+[project]
+name = "honest"
+version = "0.1.0"
+description = "HONEST: Knowledge-Graph-Based Metamorphic Testing for LLM Reasoning"
+requires-python = ">=3.8"

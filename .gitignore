@@ -1,0 +1,110 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+develop-eggs/
+sdist/
+wheels/
+pip-wheel-metadata/
+.installed.cfg
+MANIFEST
+
+# Distribution / packaging
+*.manifest
+*.spec
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Test / coverage artifacts
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+.cache/
+
+# Type checkers / linters
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---- Project data & generated outputs ----
+# The pipeline writes all rules, examples, answers, consistency results,
+# figures, and fine-tuning checkpoints under data/ and results/. These are
+# generated artifacts (see README) and are not bundled in the repository;
+# large bundles are distributed via GitHub Releases.
+data/
+results/
+outputs/
+*.csv.gz
+*.7z
+*.zip
+*.tar
+*.tar.gz
+
+# Fine-tuning / model artifacts
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.lora
+lora_adapter/
+checkpoint-*/
+
+# Logs & profiling
+*.log
+logs/
+*.lprof
+*.prof
+
+# ---- Secrets / local config ----
+# configs/local.yaml holds API keys / endpoints and is deep-merged over the
+# default config (see configs/__init__.py). Never commit it.
+configs/local.yaml
+configs/*.local.yaml
+.env
+.env.*
+*.secret
+secrets.json
+
+# ---- IDE / editors ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# ---- OS ----
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ---- spaCy / NLTK model caches (if downloaded into the repo) ----
+*.spacy

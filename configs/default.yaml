@@ -1,0 +1,138 @@
+# HONEST default config
+# This file contains the default configuration values for the project
+
+# Knowledge graph config
+knowledge_graph:
+  # Memgraph connection config
+  memgraph:
+    uri: "bolt://localhost:7687"
+    user: ""
+    password: ""
+
+# LLM config
+llm:
+  # Local LLM config (Ollama, etc.)
+  local:
+    protocol: "openai"
+    base_url: "http://localhost:8000/v1"
+    api_key: "your-api-key-here"
+    default_model: "Qwen2.5-7B-Instruct"
+
+  # DeepSeek API config
+  deepseek:
+    protocol: "openai"
+    base_url: "https://api.deepseek.com/v1"
+    api_key: "your-deepseek-api-key-here"
+    default_model: "deepseek-chat"
+
+  deepseek_v4_flash:
+    protocol: "openai"
+    base_url: "https://api.deepseek.com"
+    api_key: "your-deepseek-api-key-here"
+    default_model: "deepseek-v4-flash"
+
+  glm_5_turbo:
+    protocol: "openai"
+    base_url: ""
+    api_key: "your-glm-api-key-here"
+    default_model: "GLM-5-Turbo"
+
+  anthropic:
+    protocol: "anthropic"
+    base_url: ""
+    api_key: "your-anthropic-api-key-here"
+    default_model: "claude-sonnet-4-6"
+
+  gemini:
+    protocol: "gemini"
+    base_url: ""
+    api_key: "your-gemini-api-key-here"
+    default_model: "gemini-2.5-pro"
+
+# Data processing config
+data_processing:
+  # Rule filtering thresholds
+  rule_filtering:
+    head_coverage: 0.05
+    std_confidence: 0.5
+    pca_confidence: 0.9
+    positive_examples: 10
+
+  # Instance matching config
+  instance_matching:
+    max_examples_per_rule: 1000
+    test_rules_limit: 10
+
+# Mutation config
+mutation:
+  # Default mutation operators
+  default_operators:
+    - "BodyPermutation"
+    - "BodyAugmentation"
+    - "BodyReduction"
+    - "EntityRename"
+    - "RuleMerging"
+
+  # Processing limits
+  limits:
+    max_files: null
+    max_rules_per_file: 1000
+
+# Question generation config
+question_generation:
+  # Default question types
+  question_types:
+    - "yes_no"
+    - "wh_question"
+    - "true_false"
+    - "multiple_choice"
+
+  # Multiple-choice config
+  multiple_choice:
+    num_choices: 4
+
+# Path config
+paths:
+  # Data paths
+  data:
+    root: "data"
+    processed:
+      rules: "data/processed/rules"
+      properties: "data/processed/properties"
+      intermediate: "data/processed/intermediate"
+    examples:
+      positive: "data/examples/positive"
+      mutated: "data/examples/mutated"
+      questions: "data/examples/questions"
+    results:
+      current: "data/results/current"
+      historical: "data/results/historical"
+      llm: "data/results/llm"
+
+  # Script paths
+  scripts:
+    root: "scripts"
+    data_preparation: "scripts/data_preparation"
+    preprocessing: "scripts/preprocessing"
+    analysis: "scripts/analysis"
+    mutation: "scripts/mutation"
+    question_generation: "scripts/question_generation"
+    llm_interaction: "scripts/llm_interaction"
+
+# Logging config
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+
+# Performance config
+performance:
+  # Parallel processing
+  max_workers: 5
+
+  # Batch size
+  batch_size: 10
+
+  # Cache config
+  cache:
+    enable_metadata_cache: true
+    enable_functionality_cache: true

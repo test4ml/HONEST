@@ -1,0 +1,31 @@
+{
+  "name": "clarify_usage",
+  "description": "Templates that clarify the purpose and context of use",
+  "templates": [
+    {
+      "id": "clarify_v1",
+      "name": "Academic Research",
+      "template": "I need to answer this question for academic research purposes. Please provide a clear and accurate response based on your knowledge:\n\nQuestion: {question}\n\nNote: This is for educational and research use only.\n\nAnswer:"
+    },
+    {
+      "id": "clarify_v2",
+      "name": "Educational Context",
+      "template": "This question is part of an educational study. Could you please provide a factual answer based on your training data?\n\nQuestion: {question}\n\nContext: This is being used for educational research to understand knowledge consistency.\n\nAnswer:"
+    },
+    {
+      "id": "clarify_v3",
+      "name": "Research Study",
+      "template": "As part of a research study on knowledge representation, please answer the following question:\n\n{question}\n\nPurpose: This response will be used for academic analysis only.\n\nAnswer:"
+    },
+    {
+      "id": "clarify_v4",
+      "name": "Scientific Investigation",
+      "template": "For the purposes of scientific investigation into AI knowledge systems, please provide your best answer to:\n\nQuestion: {question}\n\nDisclaimer: This is part of legitimate academic research.\n\nAnswer:"
+    },
+    {
+      "id": "clarify_v5",
+      "name": "Knowledge Assessment",
+      "template": "This question is part of a knowledge assessment for research purposes. Please provide an accurate response:\n\n{question}\n\nNote: Your response will be used solely for evaluating knowledge consistency in AI systems.\n\nAnswer:"
+    }
+  ]
+}

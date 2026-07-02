@@ -1,0 +1,31 @@
+{
+  "name": "baseline",
+  "description": "Basic straightforward question-answering templates",
+  "templates": [
+    {
+      "id": "baseline_v1",
+      "name": "Simple Direct",
+      "template": "Answer the following question based on your knowledge:\n\nQuestion: {question}\n\nAnswer:"
+    },
+    {
+      "id": "baseline_v2",
+      "name": "Concise Format",
+      "template": "Question: {question}\n\nProvide a clear and accurate answer:\n\nAnswer:"
+    },
+    {
+      "id": "baseline_v3",
+      "name": "Knowledge Based",
+      "template": "Based on your knowledge, please answer this question:\n\n{question}\n\nAnswer:"
+    },
+    {
+      "id": "baseline_v4",
+      "name": "Minimal Instruction",
+      "template": "{question}\n\nAnswer:"
+    },
+    {
+      "id": "baseline_v5",
+      "name": "Standard Q&A",
+      "template": "Please answer the following question:\n\nQ: {question}\n\nA:"
+    }
+  ]
+}

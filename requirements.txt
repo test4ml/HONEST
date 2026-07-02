@@ -1,0 +1,29 @@
+pandas==2.3.2
+openai
+anthropic
+google-genai
+line_profiler>=4.1.0
+tqdm
+orjson
+gqlalchemy>=1.6.0
+neo4j>=5.5.0
+pyyaml>=6.0.0
+
+# LangTool dependencies
+spacy>=3.8.0
+nltk>=3.8
+
+# Semantic similarity (MCQ distractor generation)
+sentence-transformers>=2.2.0
+
+# Analysis dependencies
+seaborn>=0.13.0
+tabulate>=0.9.0
+
+# RQ5 dependencies
+scikit-learn>=1.0.0  # For dataset splitting
+httpx>=0.24.0  # For async HTTP client
+
+# RQ4 5-method overlap visualization (UpSet + Edwards 5-set Venn)
+upsetplot>=0.9.0
+venn>=0.1.3
